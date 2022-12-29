@@ -38,7 +38,7 @@ $$P(x) = \frac{1}{Z}\exp\{-U(x)\}$$
 
 Therefore,
 
-$$P_x(x_2,x_3,...,x_{R-1}|x_1,x_R) \propto \exp \Big\{ \sum_{r=2}^{R-1} (\alpha_k + \beta_k\rho_r)(2x_r-1) + \sum_{r=2}^{R}\frac{\gamma_k}{d_r}(2x_r-1)(2x_{r-1} - 1) \Big\} $$
+$$P_x(x_2,x_3,...,x_{R-1}|x_1,x_R) \propto \exp \{ \sum_{r=2}^{R-1} (\alpha_k + \beta_k\rho_r)(2x_r-1) + \sum_{r=2}^{R}\frac{\gamma_k}{d_r}(2x_r-1)(2x_{r-1} - 1) \} $$
 
 And if we set
 
@@ -48,11 +48,11 @@ $$\alpha''_k=\frac{1}{2}\ln\frac{Pr[X_R=1]}{1-Pr[X_R=1]}$$
 
 We obtain
 
-$$P_x(x_1,x_2,...,x_{R-1},X_R) = \frac{1}{Z} \exp \Big\{ \alpha'_k(2x_1-1) + \sum_{r=2}^{R-1} (\alpha_k + \beta_k\rho_r)(2x_r-1) + \alpha''_k(2x_R-1) + \sum_{r=2}^{R}\frac{\gamma_k}{d_r}(2x_r-1)(2x_{r-1} - 1) \Big\} $$
+$$P_x(x_1,x_2,...,x_{R-1},X_R) = \frac{1}{Z} \exp \{ \alpha'_k(2x_1-1) + \sum_{r=2}^{R-1} (\alpha_k + \beta_k\rho_r)(2x_r-1) + \alpha''_k(2x_R-1) + \sum_{r=2}^{R}\frac{\gamma_k}{d_r}(2x_r-1)(2x_{r-1} - 1) \} $$
 
 Where the partition function $Z$ is defined as the sum of $P$'s for every possible pattern $u$.
 
-$$Z=\sum_{u}\exp \Big\{ \alpha'_k(2u_1-1) + \sum_{r=2}^{R-1}(\alpha_k+\beta_k\rho_r)(2u_r-1) + \alpha''_k(2u_R-1) + \sum_{r=2}^{R}\frac{\gamma_k}{d_r}(2u_r-1)(2u_{r-1}-1) \Big\}$$
+$$Z=\sum_{u}\exp \{ \alpha'_k(2u_1-1) + \sum_{r=2}^{R-1}(\alpha_k+\beta_k\rho_r)(2u_r-1) + \alpha''_k(2u_R-1) + \sum_{r=2}^{R}\frac{\gamma_k}{d_r}(2u_r-1)(2u_{r-1}-1) \}$$
 
 ### 3. Computing partition function $Z$
 
@@ -64,11 +64,11 @@ $$P_x(x_1,x_2,...,x_R) = \frac{1}{Z} \prod_{r=1}^{R-1}\phi_r(x_r, x_{r+1})$$
 
 where
 
-$$\phi_1(x_1, x_2) = \exp \Big\{\alpha'_k(2x_1-1) + (\alpha_k+\beta_k\rho_2)(2x_2 - 1) + \frac{\gamma_k}{d_2}(2x_1-1)(2x_2-1) \Big\}$$
+$$\phi_1(x_1, x_2) = \exp \{\alpha'_k(2x_1-1) + (\alpha_k+\beta_k\rho_2)(2x_2 - 1) + \frac{\gamma_k}{d_2}(2x_1-1)(2x_2-1) \}$$
 
-$$\phi_1(x_r, x_{r+1}) = \exp \Big\{(\alpha_k+\beta_k\rho_{r+1})(2x_r - 1) + \frac{\gamma_k}{d_{r+1}}(2x_r-1)(2x_{r+1}-1) \Big\}$$
+$$\phi_1(x_r, x_{r+1}) = \exp \{(\alpha_k+\beta_k\rho_{r+1})(2x_r - 1) + \frac{\gamma_k}{d_{r+1}}(2x_r-1)(2x_{r+1}-1) \}$$
 
-$$\phi_{R-1}(x_{R-1}, x_R) = \exp \Big\{\alpha''_R(2x_{R-1}-1) + \frac{\gamma_k}{d_R}(2x_{R-1}-1)(2x_R-1) \Big\}$$
+$$\phi_{R-1}(x_{R-1}, x_R) = \exp \{\alpha''_R(2x_{R-1}-1) + \frac{\gamma_k}{d_R}(2x_{R-1}-1)(2x_R-1) \}$$
 
 Then the partition function $Z$ is
 
@@ -111,6 +111,8 @@ $$P_x(x_{q:q+s}) = w_q(x_q) \prod_{r=q}^{q+s-1} z_{r+1} (x_{r+1}|x_r)$$
 where
 
 $$w_q(x_q) = \sum_{x_1} \sum_{x_2} ... \sum_{x_{q-1}} z_1(x_1) \prod_{r=1}^{q-1} z_{r+1} (x_{r+1}|x_r)$$
+
+
 
 ## See also
 
