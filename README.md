@@ -84,7 +84,7 @@ $$Z = Z_1(0) + Z_1(1)$$
 
 ### 4. Marginal PMFs
 
-To optimize $\alpha', \alpha, \alpha'', \beta$ and $\gamma$ using observed methylation patterns from bisulfite sequencing data, we should compute marginal PMFs since in most cases we cannot obtain full observations for $x_n$'s due to the short length of bisulfite sequencing reads (mostly <300bp, where the size of $\mathcal{R}_k$ is 3,000bp). The following shows how to compute marginal PMFs given partial observation of methylation pattern $x_{q:q+s}$ and parameters $\alpha', \alpha, \alpha'', \beta$ and $\gamma$.
+To optimize $\alpha', \alpha, \alpha'', \beta$ and $\gamma$ using observed methylation patterns from bisulfite sequencing data, we should compute marginal PMFs since in most cases we cannot obtain full observations for $x_n$'s due to the short length of bisulfite sequencing reads (mostly <300bp, where the size of $\mathcal{R}_ k$ is 3,000bp). The following shows how to compute marginal PMFs given partial observation of methylation pattern $x_ {q:q+s}$ and parameters $\alpha', \alpha, \alpha'', \beta$ and $\gamma$.
 
 In this case, we reformulate $P_x$ as a form of inhomogeneous Markov chain.
 
