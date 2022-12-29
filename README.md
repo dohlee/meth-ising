@@ -28,7 +28,7 @@ where $\rho_n$ is the density (0~1) of CpG sites within $\pm500$ nt window cente
 
 All the followings are applied for each genomic region $\mathcal{R_k}$, which comprises $R$ CpG sites 1, 2, 3, ..., $R$.
 
-By assuming that the methylation states of the first (1) and the last ($R$) CpGs are independent, the probability of observing a methylation pattern in region $\mathcal{R_k}$ is as follows:
+By assuming that the methylation states of the first (1) and the last ( $R$ ) CpGs are independent, the probability of observing a methylation pattern in region $\mathcal{R_k}$ is as follows:
 
 $$P_X(x_1, x_2, ..., x_R) = P_X(x_2, x_3, ..., x_{R-1})P_x(x_1, x_R) \\ \simeq P_x(x_2, x_3, ..., x_{R-1})P_x(x_1)P_x(x_R)$$
 
